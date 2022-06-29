@@ -11,7 +11,7 @@ const carsByMake = [['f150'], ['corolla'], ['camaro']];
 
 const toyota = carMakers[1];
 
-const myCar = carMakers.pop();
+const someCar = carMakers.pop();
 
 // prevents incompatible values
 // carMakers.push(5);
