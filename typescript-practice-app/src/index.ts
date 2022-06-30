@@ -1,9 +1,15 @@
 import { User } from './User';
 import { Company } from './Company';
+/// <reference types="@types/google.maps" />
 
-const user = new User();
-const company = new Company();
+let map = document.getElementById('map');
 
-console.log(user);
-console.log(company);
-// AIzaSyBNLrJhOMz6idD05pzfn5lhA-TAw-mAZCU
+if (map !== null) {
+  new google.maps.Map(map, {
+    zoom: 1,
+    center: {
+      lng: 0,
+      lat: 0,
+    },
+  });
+}
