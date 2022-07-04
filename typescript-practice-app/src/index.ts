@@ -4,5 +4,7 @@ import { CustomMap } from './CustomMap';
 /// <reference types="@types/google.maps" />
 
 const user = new User();
+const company = new Company();
 const map = new CustomMap('map');
-map.addUserMarker(user);
+map.addMarker(user);
+map.addMarker(company);
