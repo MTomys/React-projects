@@ -24,7 +24,6 @@ const reducer = (
       return { loading: false, error: null, data: action.payload };
     case ActionType.SEARCH_REPOSITORIES_ERROR:
       return { loading: false, error: action.payload, data: [] };
-
     default:
       return state;
   }
